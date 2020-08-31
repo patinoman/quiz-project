@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz!</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+   
+    
+    <header>
+        <a href="./high-score.html">
+           <h4>View High Scores</h4>
+        </a>
+        <div>
+            <h4 id="time">Time: 75 </h4>
+        </div>
+
+    </header>
+
+    <br><br>
+
+    <div class="wrapper">
+        <div>
+            <h2>Coding Quiz Challenge!</h2>
+        </div>
+        <div>
+            <div>
+                <p>Try to answer the following code-related questions within the time limit.
+                </br></br>
+                    Keep in mind that incorrect answers will penalize your score/time by 10 seconds!</p>
+
+                <button id="start" class="btn btn-primary btn-lg">Start Quiz</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!---This is beginning of the  div that will contain all the questions  -->
+    <div class="divContainer">
+
+        <!---Questions -->
+
+        <h3 id="title">
+
+        </h3>
+        <ol id="q-list">
+
+
+        </ol>
+
+    </div>
+    <br>
+    <div id="response"> </div>
+
+    <div class="done-section">
+        <h3>DONE</h3>
+
+        <p id="result"> </p>
+        <p id="errorMsg"></p>
+
+        <form>
+            <div>
+                <h5>Enter initials </h5>
+            </div>
+            <div>
+                <input type="text" class="form-control" id="inputInitial" placeholder="Enter your initials"> 
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+    <div class="high-score">
+        <h2>High Scores</h2>
+
+        <div>
+            <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="1.">
+
+        </div>
+        <button class="myBtn" onclick="init()">Go Back</button>
+        <button class="myBtn" onclick="clearScore()">Clear highScores</button>
+
+
+    </div>
+
+
+    
+    <script src="./assets/js/quiz-questions.js"></script>
+      
+</body>
+
+</html>
